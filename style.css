@@ -633,7 +633,7 @@ details summary{
 @media(max-width:700px){
 
   .hero{
-    padding:25px 0 90px
+    padding:25px 0 50px
   }
 
   .hero-inner{
@@ -675,7 +675,7 @@ details summary{
   .avatar-money{
     left:-32px;
     top:auto;
-    bottom:-25px;
+    bottom:-10px;
     width:115px;
     z-index:1;
     animation-delay:-1.5s
@@ -684,7 +684,7 @@ details summary{
   .avatar-bow{
     right:-32px;
     top:auto;
-    bottom:-25px;
+    bottom:-10px;
     width:110px;
     z-index:1;
     animation-delay:-2.4s
