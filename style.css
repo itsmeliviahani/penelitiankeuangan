@@ -46,6 +46,7 @@ body{
   text-align:center;
   padding-left:175px;
   padding-right:175px
+  transform:translateY(-12px);
 }
 
 .eyebrow{
@@ -657,9 +658,13 @@ details summary{
   .hero-tape,
   .hero-sparkle,
   .hero-heart{
-    display:none
+     display:none !important;
   }
-
+  @media(min-width:701px){
+  .hero-inner{
+    transform:translateY(-55px);
+  }
+  }
   .hero p{
     padding:0 8px
   }
