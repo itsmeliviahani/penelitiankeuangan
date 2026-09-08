@@ -672,6 +672,17 @@ details summary{
     padding:25px 0 45px
   }
 
+  ...
+
+  .section-head{
+    flex-direction:column
+  }
+
+  .hero-inner{
+    transform:translateY(0);
+  }
+}
+
   .hero-inner{
     padding-left:18px;
     padding-right:18px;
