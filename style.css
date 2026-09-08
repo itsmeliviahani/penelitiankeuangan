@@ -126,48 +126,6 @@ body{
   animation-delay:-2.4s
 }
 
-.hero-tape{
-  position:absolute;
-  width:105px;
-  height:28px;
-  background:rgba(245,145,184,.36);
-  z-index:1
-}
-
-.hero-tape-left{
-  left:-18px;
-  top:30px;
-  transform:rotate(-10deg)
-}
-
-.hero-tape-right{
-  right:-20px;
-  top:36px;
-  transform:rotate(11deg)
-}
-
-.hero-sparkle,
-.hero-heart{
-  position:absolute;
-  color:#e66b9b;
-  z-index:2
-}
-
-.sparkle-one{
-  left:13%;
-  top:35%;
-  font-size:25px
-}
-
-.sparkle-two{
-  right:18%;
-  top:20%;
-  font-size:19px
-}
-
-.hero-heart{
-  display:none;
-}
 .scale span{
   display:flex;
   align-items:center;
