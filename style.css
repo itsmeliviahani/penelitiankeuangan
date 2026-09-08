@@ -1,4 +1,6 @@
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box
+}
 
 body{
   margin:0;
@@ -10,14 +12,23 @@ body{
 
 .container{
   width:min(1050px,92%);
-  margin: auto;
+  margin:auto
 }
+
+/* =========================
+   HEADER / HERO
+   ========================= */
 
 .hero{
   position:relative;
   overflow:hidden;
   padding:10px 0 50px;
-  background:linear-gradient(135deg,#ffd7e8 0%,#fff7fb 47%,#ffffff 100%);
+  background:linear-gradient(
+    135deg,
+    #ffd7e8 0%,
+    #fff7fb 47%,
+    #ffffff 100%
+  );
   color:#4a342e;
   border:1px solid #f6d7e5;
   border-radius:0 0 28px 28px;
@@ -46,7 +57,14 @@ body{
   text-align:center;
   padding-left:175px;
   padding-right:175px
-  transform:translateY(-12px);
+}
+
+/* Naikkan tulisan sedikit di laptop */
+@media(min-width:701px){
+  .hero-inner{
+    position:relative;
+    top:-20px
+  }
 }
 
 .eyebrow{
@@ -102,6 +120,10 @@ body{
   line-height:1.45
 }
 
+/* =========================
+   AVATAR
+   ========================= */
+
 .avatar-sticker{
   position:absolute;
   z-index:1;
@@ -126,6 +148,20 @@ body{
   width:145px;
   animation-delay:-2.4s
 }
+
+/* =========================
+   SEMUA DEKORASI HEADER DIHILANGKAN
+   ========================= */
+
+.hero-tape,
+.hero-sparkle,
+.hero-heart{
+  display:none!important
+}
+
+/* =========================
+   SCALE / LIKERT
+   ========================= */
 
 .scale span{
   display:flex;
@@ -155,6 +191,10 @@ body{
   color:#6b5149
 }
 
+/* =========================
+   CARD
+   ========================= */
+
 .card,
 .construct{
   background:white;
@@ -176,6 +216,10 @@ h3{
 .muted{
   color:#64748b
 }
+
+/* =========================
+   FORM
+   ========================= */
 
 .grid{
   display:grid;
@@ -256,6 +300,10 @@ select{
   gap:10px
 }
 
+/* =========================
+   QUESTIONS
+   ========================= */
+
 .question{
   padding:20px 0;
   border-top:1px solid #edf0f5
@@ -320,6 +368,10 @@ select{
   margin-top:5px
 }
 
+/* =========================
+   BUTTON
+   ========================= */
+
 .btn{
   display:inline-block;
   border:0;
@@ -345,6 +397,10 @@ select{
   text-align:center
 }
 
+/* =========================
+   ALERT
+   ========================= */
+
 .alert{
   margin:22px 0;
   padding:15px 18px;
@@ -360,6 +416,10 @@ select{
   background:#fee2e2;
   color:#991b1b
 }
+
+/* =========================
+   ADMIN
+   ========================= */
 
 .admin-head{
   display:flex;
@@ -415,6 +475,10 @@ footer{
   flex-wrap:wrap
 }
 
+/* =========================
+   FILTER
+   ========================= */
+
 .filters h2{
   margin-bottom:16px
 }
@@ -438,6 +502,10 @@ footer{
   border-radius:10px;
   font-size:.9rem
 }
+
+/* =========================
+   STATISTICS
+   ========================= */
 
 .stats{
   display:grid;
@@ -466,6 +534,10 @@ footer{
   line-height:1.2;
   margin:5px 0
 }
+
+/* =========================
+   PROGRESS
+   ========================= */
 
 .section-head{
   display:flex;
@@ -503,6 +575,10 @@ footer{
   color:#64748b;
   font-size:.78rem
 }
+
+/* =========================
+   DASHBOARD
+   ========================= */
 
 .dashboard-grid{
   display:grid;
@@ -555,17 +631,22 @@ details summary{
   margin-top:8px
 }
 
+/* =========================
+   AVATAR ANIMATION
+   ========================= */
+
 @keyframes catFloat{
   0%,100%{
     transform:translateY(0) rotate(0deg)
   }
+
   50%{
     transform:translateY(-5px) rotate(-1deg)
   }
 }
 
 /* =========================
-   TABLET / MOBILE
+   TABLET
    ========================= */
 
 @media(max-width:850px){
@@ -588,6 +669,10 @@ details summary{
 
 }
 
+/* =========================
+   MOBILE
+   ========================= */
+
 @media(max-width:700px){
 
   .hero{
@@ -596,7 +681,8 @@ details summary{
 
   .hero-inner{
     padding-left:18px;
-    padding-right:18px
+    padding-right:18px;
+    top:0
   }
 
   .hero h1{
@@ -624,12 +710,7 @@ details summary{
     display:none
   }
 
-  /*
-    Avatar dibuat lebih kecil
-    dan ditarik lebih ke luar
-    supaya tidak menabrak teks
-  */
-
+  /* Avatar HP */
   .avatar-money{
     left:-32px;
     top:auto;
@@ -655,16 +736,6 @@ details summary{
     z-index:3
   }
 
-  .hero-tape,
-  .hero-sparkle,
-  .hero-heart{
-     display:none !important;
-  }
-  @media(min-width:701px){
-  .hero-inner{
-    transform:translateY(-55px);
-  }
-  }
   .hero p{
     padding:0 8px
   }
@@ -687,6 +758,10 @@ details summary{
   }
 
 }
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
 
 @media(max-width:500px){
 
