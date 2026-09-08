@@ -10,7 +10,7 @@ body{
 
 .container{
   width:min(1050px,92%);
-  margin:auto
+  text-align: center
 }
 
 .hero{
