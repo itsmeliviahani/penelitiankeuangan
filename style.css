@@ -55,9 +55,9 @@ body{
   position:relative;
   z-index:2;
   text-align:center;
-  padding-left:175px;
-  padding-right:175px;
-  transform:translateY(35px);
+  padding-left:80px;
+  padding-right:80px;
+  transform:translateY(0)
 }
 
 .eyebrow{
@@ -81,13 +81,14 @@ body{
 }
 
 .hero h2{
-  font-size:clamp(1.9rem,4.5vw,3.05rem);
+  font-size:clamp(1.8rem,4vw,2.75rem);
   line-height:1.08;
   margin:0 0 10px;
   color:#c54d80;
   font-weight:800;
   position:relative;
-  z-index:3
+  z-index:3;
+  white-space:nowrap
 }
 
 .hero p{
@@ -105,7 +106,8 @@ body{
   font-size:1.18rem!important;
   font-weight:700;
   color:#6b4a3f!important;
-  letter-spacing:.02em
+  letter-spacing:.02em;
+  text-align:center
 }
 
 .privacy-note{
@@ -130,7 +132,7 @@ body{
   left:-38px;
   top:auto;
   bottom:0;
-  width:155px;
+  width:180px;
   animation-delay:-1.5s
 }
 
@@ -138,12 +140,13 @@ body{
   right:-38px;
   top:auto;
   bottom:0;
-  width:145px;
+  width:170px;
   animation-delay:-2.4s
 }
 
 /* =========================
-   SEMUA DEKORASI HEADER DIHILANGKAN
+   SEMUA DEKORASI HEADER
+   DIHILANGKAN
    ========================= */
 
 .hero-tape,
@@ -669,24 +672,13 @@ details summary{
 @media(max-width:700px){
 
   .hero{
-    padding:25px 0 45px
+    padding:25px 0 50px
   }
-
-  ...
-
-  .section-head{
-    flex-direction:column
-  }
-
-  .hero-inner{
-    transform:translateY(0);
-  }
-}
 
   .hero-inner{
     padding-left:18px;
     padding-right:18px;
-    top:0
+    transform:translateY(0)
   }
 
   .hero h1{
@@ -700,26 +692,31 @@ details summary{
     font-size:clamp(1.65rem,7.4vw,2.25rem);
     line-height:1.08;
     margin:0 auto 20px;
-    max-width:365px
+    max-width:365px;
+    white-space:normal
   }
 
   .author-credit{
     font-size:1.18rem!important;
     line-height:1.25;
     margin:0 0 0!important;
-    color:#6b4a3f!important
+    color:#6b4a3f!important;
+    text-align:center
   }
 
   .privacy-note{
     display:none
   }
 
-  /* Avatar HP */
+  /* =========================
+     AVATAR HP
+     ========================= */
+
   .avatar-money{
     left:-32px;
     top:auto;
     bottom:-15px;
-    width:115px;
+    width:130px;
     z-index:1;
     animation-delay:-1.5s
   }
@@ -728,7 +725,7 @@ details summary{
     right:-32px;
     top:auto;
     bottom:-15px;
-    width:110px;
+    width:125px;
     z-index:1;
     animation-delay:-2.4s
   }
@@ -761,6 +758,10 @@ details summary{
     padding:9px 3px
   }
 
+  .section-head{
+    flex-direction:column
+  }
+
 }
 
 /* =========================
@@ -775,6 +776,34 @@ details summary{
 
   .section-head{
     flex-direction:column
+  }
+
+  .hero{
+    padding-bottom:50px
+  }
+
+  .hero h1{
+    font-size:1.6rem
+  }
+
+  .hero h2{
+    font-size:1.8rem
+  }
+
+  .author-credit{
+    font-size:1.1rem!important
+  }
+
+  .avatar-money{
+    width:120px;
+    left:-30px;
+    bottom:-12px
+  }
+
+  .avatar-bow{
+    width:115px;
+    right:-30px;
+    bottom:-12px
   }
 
 }
