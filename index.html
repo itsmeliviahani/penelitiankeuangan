@@ -1,1427 +1,779 @@
-<!doctype html>
-<html lang="id">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kuesioner Penelitian — Mahasiswa PKN STAN</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="hero">
-  <div class="container hero-inner">
-
-    <h1>Penelitian Mahasiswa PKN STAN</h1>
-
-    <h2>Konsumsi Keuangan yang Bertanggung Jawab</h2>
-
-    <p class="author-credit">oleh Livia Hani</p>
-
-    <img
-      class="avatar-sticker avatar-money"
-      src="avatar-money.png"
-      alt="Kucing membawa uang"
-    >
-
-    <img
-      class="avatar-sticker avatar-bow"
-      src="avatar-bow.png"
-      alt="Stiker anjing berpita"
-    >
-
-  </div>
-</header>
-
-<main class="container">
-
-<form id="surveyForm">
-
-<section class="card">
-
-  <h2>Persetujuan & penyaring responden</h2>
-
-  <p class="muted">
-    Kuesioner ini ditujukan untuk mahasiswa aktif PKN STAN.
-    Data demografis digunakan untuk keperluan pengelompokan sampel
-    dan analisis penelitian.
-  </p>
-
-  <label class="checkline">
-    <input
-      type="checkbox"
-      name="consent"
-      value="1"
-      required
-    >
-    Saya bersedia menjadi responden dan mengisi kuesioner ini secara lengkap dan jujur.
-  </label>
-
-  <div class="grid">
-
-    <div>
-      <label>Usia</label>
-      <input
-        type="number"
-        name="age"
-        min="18"
-        max="100"
-        required
-      >
-    </div>
-
-    <div>
-      <label>Nomor Whatsapp (Keperluan Hadiah)</label>
-      <input
-        type="tel"
-        name="whatsapp"
-        placeholder="Contoh: 081234567890"
-        inputmode="tel"
-        autocomplete="tel"
-        required
-      >
-    </div>
-
-    <div>
-      <label>Program Studi</label>
-
-      <select name="study_program" required>
-
-        <option value="">Pilih</option>
-
-        <option>D-IV Akuntansi Sektor Publik</option>
-
-        <option>D-IV Manajemen Aset Publik</option>
-
-        <option>D-IV Manajemen Keuangan Negara</option>
-
-        <option>D-III Akuntansi</option>
-
-        <option>D-III Pajak</option>
-
-        <option>D-III Kepabeanan dan Cukai</option>
-
-        <option>D-III Kebendaharaan Negara</option>
-
-        <option>D-III Manajemen Aset</option>
-
-        <option>D-III PBB/Penilai</option>
-
-      </select>
-    </div>
-
-    <div>
-
-      <label>Jenis Kelamin</label>
-
-      <select name="gender" required>
-
-        <option value="">Pilih</option>
-
-        <option value="Perempuan">Perempuan</option>
-
-        <option value="Laki-laki">Laki-laki</option>
-
-      </select>
-
-    </div>
-
-    <div>
-
-      <label>Angkatan</label>
-
-      <select name="cohort" required>
-
-        <option value="">Pilih angkatan</option>
-
-        <option value="2022">2022</option>
-
-        <option value="2023">2023</option>
-
-        <option value="2024">2024</option>
-
-        <option value="2025">2025</option>
-
-        <option value="2026">2026</option>
-
-      </select>
-
-    </div>
-
-    <div>
-
-      <label>Tingkat/Semester saat ini</label>
-
-      <select name="level" required>
-
-        <option value="">Pilih</option>
-
-        <option>Tingkat 1</option>
-
-        <option>Tingkat 2</option>
-
-        <option>Tingkat 3</option>
-
-        <option>Tingkat 4</option>
-
-      </select>
-
-    </div>
-
-    <div>
-
-      <label>Status kemahasiswaan</label>
-
-      <select name="student_status" required>
-
-        <option value="">Pilih</option>
-
-        <option>Aktif</option>
-
-        <option>Nonaktif</option>
-
-        <option>Cuti akademik</option>
-
-      </select>
-
-    </div>
-
-  </div>
-
-
-  <div class="screening">
-
-    <h3>Pertanyaan penyaring</h3>
-
-    <label>
-      Apakah Anda telah mulai mengelola keuangan sendiri
-      (termasuk tunjangan ikatan dinas/uang saku bulanan)?
-    </label>
-
-    <div class="radio-row">
-
-      <label>
-        <input
-          type="radio"
-          name="self_manage"
-          value="Ya"
-          required
-        >
-        Ya
-      </label>
-
-      <label>
-        <input
-          type="radio"
-          name="self_manage"
-          value="Tidak"
-        >
-        Tidak
-      </label>
-
-    </div>
-
-
-    <label>
-      Apakah Anda terbiasa melakukan transaksi keuangan secara mandiri,
-      misalnya melalui rekening bank, dompet digital, atau aplikasi keuangan?
-    </label>
-
-    <div class="radio-row">
-
-      <label>
-        <input
-          type="radio"
-          name="transactions"
-          value="Ya"
-          required
-        >
-        Ya
-      </label>
-
-      <label>
-        <input
-          type="radio"
-          name="transactions"
-          value="Tidak"
-        >
-        Tidak
-      </label>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="card">
-
-  <h2>Petunjuk pengisian</h2>
-
-  <p>
-    Pilih satu jawaban yang paling sesuai dengan kondisi Anda.
-    Skala yang digunakan adalah Likert 5 poin:
-  </p>
-
-  <div class="scale" aria-label="Skala Likert">
-
-    <span>
-      <b>1</b>
-      <em>Sangat tidak setuju</em>
-    </span>
-
-    <span>
-      <b>2</b>
-      <em>Tidak setuju</em>
-    </span>
-
-    <span>
-      <b>3</b>
-      <em>Netral</em>
-    </span>
-
-    <span>
-      <b>4</b>
-      <em>Setuju</em>
-    </span>
-
-    <span>
-      <b>5</b>
-      <em>Sangat setuju</em>
-    </span>
-
-  </div>
-
-</section>
-
-
-<section class="construct">
-
-<h3>
-  Sosialisasi Keuangan
-  <span class="badge">FS</span>
-</h3>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FS1</span>
-Orang tua saya membicarakan masalah keuangan keluarga dengan saya sejak saya kecil.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FS1" value="1" required><span>1</span></label>
-<label><input type="radio" name="FS1" value="2"><span>2</span></label>
-<label><input type="radio" name="FS1" value="3"><span>3</span></label>
-<label><input type="radio" name="FS1" value="4"><span>4</span></label>
-<label><input type="radio" name="FS1" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FS2</span>
-Orang tua saya berbicara kepada saya tentang pentingnya menabung.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FS2" value="1" required><span>1</span></label>
-<label><input type="radio" name="FS2" value="2"><span>2</span></label>
-<label><input type="radio" name="FS2" value="3"><span>3</span></label>
-<label><input type="radio" name="FS2" value="4"><span>4</span></label>
-<label><input type="radio" name="FS2" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FS3</span>
-Orang tua saya mengajari saya cara berbelanja secara cerdas.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FS3" value="1" required><span>1</span></label>
-<label><input type="radio" name="FS3" value="2"><span>2</span></label>
-<label><input type="radio" name="FS3" value="3"><span>3</span></label>
-<label><input type="radio" name="FS3" value="4"><span>4</span></label>
-<label><input type="radio" name="FS3" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FS4</span>
-Saya memperoleh informasi mengenai hal-hal keuangan dari lingkungan pertemanan di kampus.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FS4" value="1" required><span>1</span></label>
-<label><input type="radio" name="FS4" value="2"><span>2</span></label>
-<label><input type="radio" name="FS4" value="3"><span>3</span></label>
-<label><input type="radio" name="FS4" value="4"><span>4</span></label>
-<label><input type="radio" name="FS4" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="construct">
-
-<h3>
-Sikap terhadap Risiko
-<span class="badge">ATR</span>
-</h3>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">ATR1</span>
-Saya tetap berhati-hati, bahkan ketika membelanjakan uang saku bulanan yang saya terima.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="ATR1" value="1" required><span>1</span></label>
-<label><input type="radio" name="ATR1" value="2"><span>2</span></label>
-<label><input type="radio" name="ATR1" value="3"><span>3</span></label>
-<label><input type="radio" name="ATR1" value="4"><span>4</span></label>
-<label><input type="radio" name="ATR1" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">ATR2</span>
-Saya lebih nyaman menyimpan uang saya di rekening bank daripada di pasar saham.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="ATR2" value="1" required><span>1</span></label>
-<label><input type="radio" name="ATR2" value="2"><span>2</span></label>
-<label><input type="radio" name="ATR2" value="3"><span>3</span></label>
-<label><input type="radio" name="ATR2" value="4"><span>4</span></label>
-<label><input type="radio" name="ATR2" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">ATR3</span>
-Ketika memikirkan kata “risiko”, istilah “rugi” langsung terlintas di benak saya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="ATR3" value="1" required><span>1</span></label>
-<label><input type="radio" name="ATR3" value="2"><span>2</span></label>
-<label><input type="radio" name="ATR3" value="3"><span>3</span></label>
-<label><input type="radio" name="ATR3" value="4"><span>4</span></label>
-<label><input type="radio" name="ATR3" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">ATR4</span>
-Dalam hal berinvestasi, keamanan lebih penting daripada imbal hasil.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="ATR4" value="1" required><span>1</span></label>
-<label><input type="radio" name="ATR4" value="2"><span>2</span></label>
-<label><input type="radio" name="ATR4" value="3"><span>3</span></label>
-<label><input type="radio" name="ATR4" value="4"><span>4</span></label>
-<label><input type="radio" name="ATR4" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="construct">
-
-<h3>
-Akses terhadap Layanan Keuangan
-<span class="badge">AFS</span>
-</h3>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">AFS1</span>
-Lembaga keuangan terdekat (misalnya bank, kantor pos, perusahaan asuransi, perusahaan pembiayaan mikro, dll.) berjarak kurang dari 5 km dari tempat tinggal saya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="AFS1" value="1" required><span>1</span></label>
-<label><input type="radio" name="AFS1" value="2"><span>2</span></label>
-<label><input type="radio" name="AFS1" value="3"><span>3</span></label>
-<label><input type="radio" name="AFS1" value="4"><span>4</span></label>
-<label><input type="radio" name="AFS1" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">AFS2</span>
-Saya tinggal dalam radius kurang dari 1 km dari ATM yang mudah saya kunjungi.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="AFS2" value="1" required><span>1</span></label>
-<label><input type="radio" name="AFS2" value="2"><span>2</span></label>
-<label><input type="radio" name="AFS2" value="3"><span>3</span></label>
-<label><input type="radio" name="AFS2" value="4"><span>4</span></label>
-<label><input type="radio" name="AFS2" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">AFS3</span>
-Saya menerima informasi mengenai transaksi saya dengan segera.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="AFS3" value="1" required><span>1</span></label>
-<label><input type="radio" name="AFS3" value="2"><span>2</span></label>
-<label><input type="radio" name="AFS3" value="3"><span>3</span></label>
-<label><input type="radio" name="AFS3" value="4"><span>4</span></label>
-<label><input type="radio" name="AFS3" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">AFS4</span>
-Layanan keuangan yang disediakan oleh lembaga keuangan terjangkau bagi saya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="AFS4" value="1" required><span>1</span></label>
-<label><input type="radio" name="AFS4" value="2"><span>2</span></label>
-<label><input type="radio" name="AFS4" value="3"><span>3</span></label>
-<label><input type="radio" name="AFS4" value="4"><span>4</span></label>
-<label><input type="radio" name="AFS4" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">AFS5</span>
-Layanan keuangan yang saya terima dari lembaga keuangan sesuai dengan kebutuhan saya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="AFS5" value="1" required><span>1</span></label>
-<label><input type="radio" name="AFS5" value="2"><span>2</span></label>
-<label><input type="radio" name="AFS5" value="3"><span>3</span></label>
-<label><input type="radio" name="AFS5" value="4"><span>4</span></label>
-<label><input type="radio" name="AFS5" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">AFS6</span>
-Ketentuan pada lembaga keuangan mudah saya pahami untuk mengajukan produk keuangan.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="AFS6" value="1" required><span>1</span></label>
-<label><input type="radio" name="AFS6" value="2"><span>2</span></label>
-<label><input type="radio" name="AFS6" value="3"><span>3</span></label>
-<label><input type="radio" name="AFS6" value="4"><span>4</span></label>
-<label><input type="radio" name="AFS6" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="construct">
-
-<h3>
-Kendali Perilaku
-<span class="badge">BC</span>
-</h3>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">BC1</span>
-Situasi keuangan saya sepenuhnya berada dalam kendali saya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="BC1" value="1" required><span>1</span></label>
-<label><input type="radio" name="BC1" value="2"><span>2</span></label>
-<label><input type="radio" name="BC1" value="3"><span>3</span></label>
-<label><input type="radio" name="BC1" value="4"><span>4</span></label>
-<label><input type="radio" name="BC1" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">BC3</span>
-Saya dapat mengubah hal-hal penting dalam hidup saya dengan usaha saya sendiri.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="BC3" value="1" required><span>1</span></label>
-<label><input type="radio" name="BC3" value="2"><span>2</span></label>
-<label><input type="radio" name="BC3" value="3"><span>3</span></label>
-<label><input type="radio" name="BC3" value="4"><span>4</span></label>
-<label><input type="radio" name="BC3" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">BC4</span>
-Saya dapat menahan diri dari pembelian yang tidak perlu meskipun saya sedang tergoda.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="BC4" value="1" required><span>1</span></label>
-<label><input type="radio" name="BC4" value="2"><span>2</span></label>
-<label><input type="radio" name="BC4" value="3"><span>3</span></label>
-<label><input type="radio" name="BC4" value="4"><span>4</span></label>
-<label><input type="radio" name="BC4" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">BC5</span>
-Saya dapat dengan mudah mengelola pengeluaran saya apabila saya menghendakinya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="BC5" value="1" required><span>1</span></label>
-<label><input type="radio" name="BC5" value="2"><span>2</span></label>
-<label><input type="radio" name="BC5" value="3"><span>3</span></label>
-<label><input type="radio" name="BC5" value="4"><span>4</span></label>
-<label><input type="radio" name="BC5" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="construct">
-
-<h3>
-Literasi Keuangan
-<span class="badge">FL</span>
-</h3>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FL1</span>
-Inflasi yang tinggi berarti biaya hidup meningkat dengan cepat.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FL1" value="1" required><span>1</span></label>
-<label><input type="radio" name="FL1" value="2"><span>2</span></label>
-<label><input type="radio" name="FL1" value="3"><span>3</span></label>
-<label><input type="radio" name="FL1" value="4"><span>4</span></label>
-<label><input type="radio" name="FL1" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FL2</span>
-Lembaga keuangan menggunakan konsep diskonto (potongan bunga di muka) untuk menghitung besaran cicilan tetap, misalnya cicilan paylater.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FL2" value="1" required><span>1</span></label>
-<label><input type="radio" name="FL2" value="2"><span>2</span></label>
-<label><input type="radio" name="FL2" value="3"><span>3</span></label>
-<label><input type="radio" name="FL2" value="4"><span>4</span></label>
-<label><input type="radio" name="FL2" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FL3</span>
-Investasi dengan imbal hasil tinggi cenderung memiliki risiko yang lebih tinggi dari rata-rata.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FL3" value="1" required><span>1</span></label>
-<label><input type="radio" name="FL3" value="2"><span>2</span></label>
-<label><input type="radio" name="FL3" value="3"><span>3</span></label>
-<label><input type="radio" name="FL3" value="4"><span>4</span></label>
-<label><input type="radio" name="FL3" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FL4</span>
-Deposito berjangka bank menawarkan imbal hasil bunga yang besarannya sudah ditentukan sejak awal, sehingga jumlah keuntungannya dapat diketahui secara pasti sebelum jatuh tempo.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FL4" value="1" required><span>1</span></label>
-<label><input type="radio" name="FL4" value="2"><span>2</span></label>
-<label><input type="radio" name="FL4" value="3"><span>3</span></label>
-<label><input type="radio" name="FL4" value="4"><span>4</span></label>
-<label><input type="radio" name="FL4" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FL5</span>
-Penting untuk berinvestasi pada berbagai jenis aset guna mengurangi risiko kerugian.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FL5" value="1" required><span>1</span></label>
-<label><input type="radio" name="FL5" value="2"><span>2</span></label>
-<label><input type="radio" name="FL5" value="3"><span>3</span></label>
-<label><input type="radio" name="FL5" value="4"><span>4</span></label>
-<label><input type="radio" name="FL5" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="construct">
-
-<h3>
-Sikap Keuangan
-<span class="badge">FA</span>
-</h3>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FA2</span>
-Saya berpikir bahwa menyusun perencanaan keuangan sangatlah penting.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FA2" value="1" required><span>1</span></label>
-<label><input type="radio" name="FA2" value="2"><span>2</span></label>
-<label><input type="radio" name="FA2" value="3"><span>3</span></label>
-<label><input type="radio" name="FA2" value="4"><span>4</span></label>
-<label><input type="radio" name="FA2" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FA3</span>
-Saya berpikir bahwa mematuhi anggaran keuangan pribadi sangatlah penting.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FA3" value="1" required><span>1</span></label>
-<label><input type="radio" name="FA3" value="2"><span>2</span></label>
-<label><input type="radio" name="FA3" value="3"><span>3</span></label>
-<label><input type="radio" name="FA3" value="4"><span>4</span></label>
-<label><input type="radio" name="FA3" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FA4</span>
-Saya berpikir bahwa merencanakan pengeluaran uang penting untuk mengelola hidup seseorang dengan baik.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FA4" value="1" required><span>1</span></label>
-<label><input type="radio" name="FA4" value="2"><span>2</span></label>
-<label><input type="radio" name="FA4" value="3"><span>3</span></label>
-<label><input type="radio" name="FA4" value="4"><span>4</span></label>
-<label><input type="radio" name="FA4" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FA5</span>
-Saya berpikir bahwa memikirkan kondisi keuangan saya di masa depan penting bagi keberhasilan finansial saya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FA5" value="1" required><span>1</span></label>
-<label><input type="radio" name="FA5" value="2"><span>2</span></label>
-<label><input type="radio" name="FA5" value="3"><span>3</span></label>
-<label><input type="radio" name="FA5" value="4"><span>4</span></label>
-<label><input type="radio" name="FA5" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">FA6</span>
-Saya berpikir bahwa tujuan keuangan yang jelas dapat membantu saya menentukan prioritas dalam pengeluaran.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="FA6" value="1" required><span>1</span></label>
-<label><input type="radio" name="FA6" value="2"><span>2</span></label>
-<label><input type="radio" name="FA6" value="3"><span>3</span></label>
-<label><input type="radio" name="FA6" value="4"><span>4</span></label>
-<label><input type="radio" name="FA6" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="construct">
-
-<h3>
-Konsumsi Keuangan yang Bertanggung Jawab
-<span class="badge">RFC</span>
-</h3>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">RFC1</span>
-Saya menjalani hidup sesuai dengan kemampuan keuangan saya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="RFC1" value="1" required><span>1</span></label>
-<label><input type="radio" name="RFC1" value="2"><span>2</span></label>
-<label><input type="radio" name="RFC1" value="3"><span>3</span></label>
-<label><input type="radio" name="RFC1" value="4"><span>4</span></label>
-<label><input type="radio" name="RFC1" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">RFC2</span>
-Saya membayar tagihan bulanan saya sebelum jatuh tempo.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="RFC2" value="1" required><span>1</span></label>
-<label><input type="radio" name="RFC2" value="2"><span>2</span></label>
-<label><input type="radio" name="RFC2" value="3"><span>3</span></label>
-<label><input type="radio" name="RFC2" value="4"><span>4</span></label>
-<label><input type="radio" name="RFC2" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">RFC3</span>
-Saya berusaha merencanakan kondisi keuangan saya di masa depan.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="RFC3" value="1" required><span>1</span></label>
-<label><input type="radio" name="RFC3" value="2"><span>2</span></label>
-<label><input type="radio" name="RFC3" value="3"><span>3</span></label>
-<label><input type="radio" name="RFC3" value="4"><span>4</span></label>
-<label><input type="radio" name="RFC3" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">RFC4</span>
-Dalam pembelian barang konsumsi sehari-hari, saya memiliki informasi yang cukup untuk membuat keputusan rasional yang sesuai dengan kemampuan keuangan saya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="RFC4" value="1" required><span>1</span></label>
-<label><input type="radio" name="RFC4" value="2"><span>2</span></label>
-<label><input type="radio" name="RFC4" value="3"><span>3</span></label>
-<label><input type="radio" name="RFC4" value="4"><span>4</span></label>
-<label><input type="radio" name="RFC4" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">RFC5</span>
-Saya berusaha menambah wawasan mengenai pengelolaan keuangan pribadi yang berhasil.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="RFC5" value="1" required><span>1</span></label>
-<label><input type="radio" name="RFC5" value="2"><span>2</span></label>
-<label><input type="radio" name="RFC5" value="3"><span>3</span></label>
-<label><input type="radio" name="RFC5" value="4"><span>4</span></label>
-<label><input type="radio" name="RFC5" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-
-<div class="question">
-
-<div class="qtext">
-<span class="qcode">RFC6</span>
-Ketika membeli suatu barang, hal pertama yang saya pikirkan adalah apakah saya mampu membelinya.
-</div>
-
-<div class="likert">
-
-<label><input type="radio" name="RFC6" value="1" required><span>1</span></label>
-<label><input type="radio" name="RFC6" value="2"><span>2</span></label>
-<label><input type="radio" name="RFC6" value="3"><span>3</span></label>
-<label><input type="radio" name="RFC6" value="4"><span>4</span></label>
-<label><input type="radio" name="RFC6" value="5"><span>5</span></label>
-
-</div>
-
-<div class="likert-caption">
-<span>Sangat tidak setuju</span>
-<span>Sangat setuju</span>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="card submit-card">
-
-<p class="muted">
-Pastikan seluruh pertanyaan telah dijawab sebelum mengirim.
-</p>
-
-<p class="muted prize-disclaimer">
-Nomor WhatsApp hanya digunakan untuk keperluan pengundian/pemberian hadiah
-dan disimpan terpisah dari jawaban penelitian.
-</p>
-
-<button type="submit" class="btn">
-Kirim Jawaban
-</button>
-
-</section>
-
-</form>
-
-</main>
-
-
-<footer>
-Instrumen diadaptasi ke konteks mahasiswa PKN STAN dari Khan et al. (2026).
-Nilai validitas/reliabilitas pada sumber acuan bukan hasil pengujian sampel Indonesia.
-</footer>
-
-
-<script src="config.js"></script>
-
-<script>
-
-const form = document.getElementById('surveyForm');
-
-const alertBox = document.createElement('div');
-
-alertBox.className = 'alert';
-
-form.parentNode.insertBefore(
-  alertBox,
-  form
-);
-
-alertBox.style.display = 'none';
-
-
-function show(msg,type='error'){
-
-  alertBox.className = 'alert ' + type;
-
-  alertBox.textContent = msg;
-
-  alertBox.style.display = 'block';
-
-  window.scrollTo({
-    top:0,
-    behavior:'smooth'
-  });
-
+*{
+  box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
 
-form.addEventListener(
-  'submit',
-  async function(e){
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#fffafb;
+  color:#493a35;
+  line-height:1.6;
+}
 
-    e.preventDefault();
+.container{
+  width:min(1340px, calc(100% - 48px));
+  margin:0 auto;
+}
 
-    if(!form.checkValidity()){
+/* =========================
+   HEADER
+   ========================= */
 
-      form.reportValidity();
+.hero{
+  position:relative;
+  overflow:hidden;
+  min-height:340px;
+  padding:30px 0 55px;
+  background:linear-gradient(
+    135deg,
+    #ffe0eb 0%,
+    #fff4f8 48%,
+    #ffffff 100%
+  );
+  border-bottom:1px solid #f2d6e1;
+  border-radius:0 0 34px 34px;
+}
 
-      return;
+.hero-inner{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:0 20px;
+  transform:translateY(35px);
+}
 
-    }
+.hero h1{
+  margin:0 0 8px;
+  color:#4b3833;
+  font-size:42px;
+  line-height:1.15;
+  font-weight:800;
+  letter-spacing:-1px;
+}
 
+.hero h2{
+  margin:0 auto 12px;
+  max-width:900px;
+  color:#c7467c;
+  font-size:48px;
+  line-height:1.15;
+  font-weight:800;
+  letter-spacing:-1.5px;
+}
 
-    const data = {};
+.author-credit{
+  margin:0;
+  color:#6b4a3f;
+  font-size:22px;
+  font-weight:700;
+}
 
-    new FormData(form).forEach(
-      (v,k) => data[k] = v
-    );
+/* =========================
+   AVATAR
+   ========================= */
 
+.avatar-sticker{
+  position:absolute;
+  display:block;
+  object-fit:contain;
+  pointer-events:none;
+  user-select:none;
+  z-index:1;
+  animation:avatarFloat 4s ease-in-out infinite;
+}
 
-    if(Number(data.age) < 18){
+.avatar-money{
+  left:-38px;
+  bottom:0;
+  width:155px;
+  animation-delay:-1.5s;
+}
 
-      show(
-        'Responden harus berusia minimal 18 tahun.'
-      );
+.avatar-bow{
+  right:-38px;
+  bottom:0;
+  width:145px;
+  animation-delay:-2.4s;
+}
 
-      return;
-
-    }
-
-
-    if(
-      !/^[0-9+()\s-]{9,20}$/.test(
-        String(data.whatsapp || '')
-      )
-    ){
-
-      show(
-        'Silakan masukkan nomor WhatsApp yang valid.'
-      );
-
-      return;
-
-    }
-
-
-    if(data.student_status !== 'Aktif'){
-
-      show(
-        'Kuesioner ini ditujukan untuk mahasiswa aktif PKN STAN.'
-      );
-
-      return;
-
-    }
-
-
-    if(
-      data.self_manage !== 'Ya' ||
-      data.transactions !== 'Ya'
-    ){
-
-      show(
-        'Berdasarkan kriteria penelitian, responden perlu telah mengelola keuangan dan bertransaksi secara mandiri.'
-      );
-
-      return;
-
-    }
-
-
-    const btn =
-      form.querySelector(
-        'button[type=submit]'
-      );
-
-    btn.disabled = true;
-
-    btn.textContent = 'Mengirim...';
-
-
-    const params = new URLSearchParams({
-
-      action:'submit',
-
-      key:APP_CONFIG.submitKey,
-
-      ...data
-
-    });
-
-
-    try{
-
-      await fetch(
-        APP_CONFIG.scriptUrl,
-        {
-
-          method:'POST',
-
-          mode:'no-cors',
-
-          headers:{
-            'Content-Type':
-              'application/x-www-form-urlencoded;charset=UTF-8'
-          },
-
-          body:params.toString(),
-
-          cache:'no-store'
-
-        }
-      );
-
-
-      form.reset();
-
-      show(
-        'Terima kasih. Jawaban Anda berhasil dikirim.',
-        'success'
-      );
-
-
-    }catch(err){
-
-      show(
-        'Jawaban belum tersimpan. Pastikan koneksi internet aktif dan konfigurasi Google Sheets sudah benar. '
-        + err.message
-      );
-
-    }finally{
-
-      btn.disabled = false;
-
-      btn.textContent = 'Kirim Jawaban';
-
-    }
-
+@keyframes avatarFloat{
+  0%,100%{
+    transform:translateY(0);
   }
-);
 
-</script>
+  50%{
+    transform:translateY(-7px);
+  }
+}
 
-</body>
-</html>
+/* =========================
+   MAIN
+   ========================= */
+
+main{
+  padding:28px 0 50px;
+}
+
+form{
+  margin:0;
+}
+
+.card,
+.construct{
+  background:#ffffff;
+  border:1px solid #eadfe3;
+  border-radius:24px;
+  box-shadow:0 8px 28px rgba(92,66,78,.07);
+}
+
+.card{
+  padding:32px;
+  margin-bottom:24px;
+}
+
+.construct{
+  padding:30px 32px;
+  margin-bottom:24px;
+}
+
+.card h2,
+.construct h3{
+  margin-top:0;
+  color:#493a35;
+}
+
+.card h2{
+  margin-bottom:22px;
+  font-size:28px;
+  line-height:1.3;
+}
+
+.construct h3{
+  margin-bottom:24px;
+  font-size:25px;
+  line-height:1.3;
+}
+
+/* =========================
+   TEXT
+   ========================= */
+
+.muted{
+  color:#63748e;
+  font-size:18px;
+}
+
+label{
+  display:block;
+  margin-bottom:8px;
+  color:#493a35;
+  font-size:17px;
+  font-weight:700;
+}
+
+/* =========================
+   CONSENT
+   ========================= */
+
+.checkline{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin:24px 0 26px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.checkline input{
+  width:18px;
+  height:18px;
+  margin-top:4px;
+  flex:0 0 auto;
+}
+
+/* =========================
+   FORM GRID
+   ========================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:22px 20px;
+}
+
+.grid > div{
+  min-width:0;
+}
+
+/* =========================
+   INPUT & SELECT
+   ========================= */
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select{
+  width:100%;
+  min-height:64px;
+  padding:0 17px;
+  border:1.5px solid #cfd8e6;
+  border-radius:14px;
+  background:#ffffff;
+  color:#3f3632;
+  font-family:inherit;
+  font-size:18px;
+  outline:none;
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+input::placeholder{
+  color:#858585;
+}
+
+select{
+  cursor:pointer;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus{
+  border-color:#c7467c;
+  box-shadow:0 0 0 4px rgba(199,70,124,.10);
+}
+
+/* =========================
+   SCREENING
+   ========================= */
+
+.screening{
+  margin-top:30px;
+  padding:25px;
+  background:#fff5f8;
+  border:1px solid #f3dce5;
+  border-radius:18px;
+}
+
+.screening h3{
+  margin:0 0 20px;
+  color:#493a35;
+  font-size:22px;
+}
+
+.screening > label{
+  margin-top:20px;
+}
+
+.radio-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  margin-top:8px;
+}
+
+.radio-row label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0;
+  font-weight:600;
+}
+
+.radio-row input{
+  width:18px;
+  height:18px;
+}
+
+/* =========================
+   LIKERT INSTRUCTION
+   ========================= */
+
+.scale{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+  margin-top:22px;
+}
+
+.scale span{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:88px;
+  padding:12px 8px;
+  border:1px solid #f0dce4;
+  border-radius:16px;
+  background:#fff7fa;
+  text-align:center;
+}
+
+.scale b{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  margin-bottom:7px;
+  border-radius:50%;
+  background:#f4b8cd;
+  color:#fff;
+  font-size:17px;
+}
+
+.scale em{
+  color:#6b5b61;
+  font-size:13px;
+  font-style:normal;
+  line-height:1.3;
+}
+
+/* =========================
+   BADGE
+   ========================= */
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-left:8px;
+  padding:4px 10px;
+  border-radius:999px;
+  background:#f8d7e4;
+  color:#b83d70;
+  font-size:13px;
+  font-weight:800;
+  vertical-align:middle;
+}
+
+/* =========================
+   QUESTIONS
+   ========================= */
+
+.question{
+  padding:24px 0;
+  border-top:1px solid #eee5e8;
+}
+
+.question:first-of-type{
+  border-top:0;
+  padding-top:0;
+}
+
+.qtext{
+  margin-bottom:16px;
+  color:#493a35;
+  font-size:18px;
+  font-weight:600;
+  line-height:1.55;
+}
+
+.qcode{
+  display:inline-block;
+  min-width:48px;
+  margin-right:7px;
+  padding:3px 8px;
+  border-radius:8px;
+  background:#fde3ec;
+  color:#bf4275;
+  font-size:13px;
+  font-weight:800;
+  vertical-align:2px;
+}
+
+/* =========================
+   LIKERT BUTTONS
+   ========================= */
+
+.likert{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+}
+
+.likert label{
+  position:relative;
+  display:block;
+  margin:0;
+  cursor:pointer;
+}
+
+.likert input{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+.likert span{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:56px;
+  border:1.5px solid #d9dfe8;
+  border-radius:13px;
+  background:#ffffff;
+  color:#554945;
+  font-size:18px;
+  font-weight:800;
+  transition:
+    background .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    transform .18s ease;
+}
+
+.likert label:hover span{
+  border-color:#d98bab;
+  background:#fff5f8;
+}
+
+.likert input:checked + span{
+  border-color:#c7467c;
+  background:#c7467c;
+  color:#ffffff;
+  transform:translateY(-1px);
+}
+
+.likert-caption{
+  display:flex;
+  justify-content:space-between;
+  margin-top:7px;
+  color:#8993a3;
+  font-size:12px;
+  font-weight:600;
+}
+
+/* =========================
+   SUBMIT
+   ========================= */
+
+.submit-card{
+  text-align:center;
+}
+
+.prize-disclaimer{
+  max-width:760px;
+  margin:12px auto 24px;
+  font-size:14px;
+  line-height:1.5;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:220px;
+  min-height:58px;
+  padding:12px 28px;
+  border:0;
+  border-radius:14px;
+  background:#8b5e4a;
+  color:#ffffff;
+  font-family:inherit;
+  font-size:18px;
+  font-weight:800;
+  cursor:pointer;
+  transition:
+    background .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.btn:hover{
+  background:#744b3a;
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(116,75,58,.18);
+}
+
+.btn:disabled{
+  opacity:.65;
+  cursor:not-allowed;
+  transform:none;
+}
+
+/* =========================
+   ALERT
+   ========================= */
+
+.alert{
+  display:none;
+  margin:0 auto 20px;
+  padding:16px 20px;
+  border-radius:14px;
+  font-size:16px;
+  font-weight:700;
+}
+
+.alert.error{
+  background:#fff0f2;
+  border:1px solid #f3c8d0;
+  color:#a53e4e;
+}
+
+.alert.success{
+  background:#eef9f2;
+  border:1px solid #c9e8d3;
+  color:#38704a;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer{
+  padding:30px 24px 40px;
+  color:#7b7075;
+  text-align:center;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media(max-width:900px){
+
+  .hero h1{
+    font-size:36px;
+  }
+
+  .hero h2{
+    font-size:40px;
+  }
+
+  .avatar-money{
+    left:-30px;
+    width:135px;
+  }
+
+  .avatar-bow{
+    right:-30px;
+    width:130px;
+  }
+
+  .card,
+  .construct{
+    padding:26px;
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:700px){
+
+  .container{
+    width:calc(100% - 28px);
+  }
+
+  .hero{
+    min-height:390px;
+    padding:25px 0 45px;
+    border-radius:0 0 26px 26px;
+  }
+
+  /*
+    Khusus HP:
+    desktop turun 35px,
+    HP kembali ke posisi normal.
+  */
+  .hero-inner{
+    padding:0 18px;
+    transform:translateY(0);
+  }
+
+  .hero h1{
+    margin-bottom:10px;
+    font-size:30px;
+    line-height:1.18;
+    letter-spacing:-.5px;
+  }
+
+  .hero h2{
+    max-width:360px;
+    font-size:34px;
+    line-height:1.18;
+    letter-spacing:-.7px;
+  }
+
+  .author-credit{
+    font-size:19px;
+  }
+
+  /*
+    Avatar dibuat lebih rendah
+    dan sedikit keluar dari sisi.
+  */
+  .avatar-money{
+    left:-28px;
+    bottom:-5px;
+    width:112px;
+  }
+
+  .avatar-bow{
+    right:-28px;
+    bottom:-5px;
+    width:108px;
+  }
+
+  main{
+    padding:20px 0 35px;
+  }
+
+  .card,
+  .construct{
+    padding:22px 18px;
+    border-radius:20px;
+    margin-bottom:18px;
+  }
+
+  .card h2{
+    font-size:24px;
+  }
+
+  .construct h3{
+    font-size:22px;
+  }
+
+  .muted{
+    font-size:16px;
+  }
+
+  .checkline{
+    font-size:16px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  select{
+    min-height:58px;
+    font-size:16px;
+  }
+
+  .screening{
+    padding:18px;
+  }
+
+  .scale{
+    grid-template-columns:repeat(5,1fr);
+    gap:5px;
+  }
+
+  .scale span{
+    min-height:72px;
+    padding:7px 3px;
+    border-radius:11px;
+  }
+
+  .scale b{
+    width:30px;
+    height:30px;
+    font-size:14px;
+  }
+
+  .scale em{
+    font-size:10px;
+  }
+
+  .question{
+    padding:20px 0;
+  }
+
+  .qtext{
+    font-size:16px;
+  }
+
+  .likert{
+    gap:6px;
+  }
+
+  .likert span{
+    min-height:50px;
+    border-radius:10px;
+    font-size:16px;
+  }
+
+  .likert-caption{
+    font-size:10px;
+  }
+
+  .badge{
+    font-size:11px;
+    padding:3px 8px;
+  }
+
+  .btn{
+    width:100%;
+    min-height:56px;
+  }
+
+  footer{
+    padding:24px 18px 32px;
+    font-size:13px;
+  }
+}
+
+/* =========================
+   SMALL PHONE
+   ========================= */
+
+@media(max-width:420px){
+
+  .hero{
+    min-height:365px;
+  }
+
+  .hero h1{
+    font-size:27px;
+  }
+
+  .hero h2{
+    font-size:31px;
+  }
+
+  .author-credit{
+    font-size:18px;
+  }
+
+  .avatar-money{
+    left:-30px;
+    bottom:-5px;
+    width:100px;
+  }
+
+  .avatar-bow{
+    right:-30px;
+    bottom:-5px;
+    width:98px;
+  }
+
+  .scale span{
+    min-height:68px;
+  }
+
+  .scale em{
+    font-size:9px;
+  }
+
+  .likert span{
+    min-height:46px;
+    font-size:15px;
+  }
+}
