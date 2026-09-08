@@ -112,14 +112,16 @@ body{
 
 .avatar-money{
   left:-38px;
-  top:145px;
+  top:auto;
+  bottom:0;
   width:155px;
   animation-delay:-1.5s
 }
 
 .avatar-bow{
   right:-38px;
-  top:165px;
+  top:auto;
+  bottom:0;
   width:145px;
   animation-delay:-2.4s
 }
