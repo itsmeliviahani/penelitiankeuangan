@@ -715,7 +715,7 @@ details summary{
   .avatar-money{
     left:-32px;
     top:auto;
-    bottom:-15px;
+    bottom:-25px;
     width:130px;
     z-index:1;
     animation-delay:-1.5s
@@ -724,7 +724,7 @@ details summary{
   .avatar-bow{
     right:-32px;
     top:auto;
-    bottom:-15px;
+    bottom:-25px;
     width:125px;
     z-index:1;
     animation-delay:-2.4s
