@@ -55,9 +55,9 @@ body{
   position:relative;
   z-index:2;
   text-align:center;
-  padding-left:80px;
-  padding-right:80px;
-  transform:translateY(0)
+  padding-left:175px;
+  padding-right:175px;
+  transform:translateY(55px)
 }
 
 .eyebrow{
