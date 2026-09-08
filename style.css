@@ -10,7 +10,6 @@ body{
 
 .container{
   width:min(1050px,92%);
-  text-align: center;
   margin: auto;
 }
 
