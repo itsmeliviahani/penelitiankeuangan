@@ -166,11 +166,8 @@ body{
 }
 
 .hero-heart{
-  left:8%;
-  bottom:10%;
-  font-size:28px
+  display:none;
 }
-
 .scale span{
   display:flex;
   align-items:center;
