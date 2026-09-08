@@ -62,8 +62,7 @@ body{
 /* Naikkan tulisan sedikit di laptop */
 @media(min-width:701px){
   .hero-inner{
-    position:relative;
-    top:-20px
+    transform:translateY(-30px);
   }
 }
 
