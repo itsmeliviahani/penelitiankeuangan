@@ -8,103 +8,29 @@
 <title>Kuesioner Penelitian — Mahasiswa PKN STAN</title>
 
 <link rel="stylesheet" href="style.css">
-
-<style>
-/* =========================================================
-   HEADER OVERRIDE
-   ========================================================= */
-
-.hero-inner{
-  text-align:center;
-  padding-left:20px;
-  padding-right:20px;
-  transform:translateY(0);
-}
-
-.hero h1{
-  margin:0 0 8px;
-}
-
-.hero h2{
-  max-width:1100px;
-  margin:0 auto 12px;
-  line-height:1.15;
-}
-
-.author-credit{
-  text-align:center;
-  margin:0;
-}
-
-/* Avatar sedikit lebih besar */
-.avatar-money{
-  width:175px;
-}
-
-.avatar-bow{
-  width:165px;
-}
-
-/* =========================================================
-   MOBILE HEADER
-   ========================================================= */
-
-@media(max-width:700px){
-
-  .hero-inner{
-    padding-left:18px;
-    padding-right:18px;
-    transform:translateY(0);
-  }
-
-  .hero h1{
-    font-size:34px;
-    line-height:1.15;
-  }
-
-  .hero h2{
-    max-width:100%;
-    font-size:38px;
-    line-height:1.15;
-  }
-
-  .author-credit{
-    text-align:center;
-  }
-
-  .avatar-money{
-    width:125px;
-  }
-
-  .avatar-bow{
-    width:120px;
-  }
-
-}
-</style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================================================
+<!-- =========================
      HEADER
-     ========================================================= -->
+     ========================= -->
 
 <header class="hero">
 
   <div class="container hero-inner">
 
-    <h1>Penelitian Mahasiswa PKN STAN</h1>
+    <h1>
+      Penelitian Mahasiswa PKN STAN
+    </h1>
 
     <h2>
-      Konsumsi Keuangan yang Bertanggung Jawab
+      Konsumsi Keuangan<br>
+      yang Bertanggung Jawab
     </h2>
 
     <p class="author-credit">
-      oleh Livia Hani
+      Metodologi Penelitian
     </p>
 
     <img
@@ -124,22 +50,24 @@
 </header>
 
 
-<!-- =========================================================
+<!-- =========================
      MAIN
-     ========================================================= -->
+     ========================= -->
 
 <main class="container">
 
 <form id="surveyForm">
 
 
-<!-- =========================================================
-     PERSETUJUAN & DATA RESPONDEN
-     ========================================================= -->
+<!-- =========================
+     PERSETUJUAN & SCREENING
+     ========================= -->
 
 <section class="card">
 
-  <h2>Persetujuan & penyaring responden</h2>
+  <h2>
+    Persetujuan & penyaring responden
+  </h2>
 
   <p class="muted">
     Kuesioner ini ditujukan untuk mahasiswa aktif PKN STAN.
@@ -162,6 +90,8 @@
   </label>
 
 
+  <!-- DATA RESPONDEN -->
+
   <div class="grid">
 
 
@@ -169,7 +99,9 @@
 
     <div>
 
-      <label>Usia</label>
+      <label>
+        Usia
+      </label>
 
       <input
         type="number"
@@ -206,32 +138,54 @@
 
     <div>
 
-      <label>Program Studi</label>
+      <label>
+        Program Studi
+      </label>
 
       <select
         name="study_program"
         required
       >
 
-        <option value="">Pilih</option>
+        <option value="">
+          Pilih
+        </option>
 
-        <option>D-IV Akuntansi Sektor Publik</option>
+        <option>
+          D-IV Akuntansi Sektor Publik
+        </option>
 
-        <option>D-IV Manajemen Aset Publik</option>
+        <option>
+          D-IV Manajemen Aset Publik
+        </option>
 
-        <option>D-IV Manajemen Keuangan Negara</option>
+        <option>
+          D-IV Manajemen Keuangan Negara
+        </option>
 
-        <option>D-III Akuntansi</option>
+        <option>
+          D-III Akuntansi
+        </option>
 
-        <option>D-III Pajak</option>
+        <option>
+          D-III Pajak
+        </option>
 
-        <option>D-III Kepabeanan dan Cukai</option>
+        <option>
+          D-III Kepabeanan dan Cukai
+        </option>
 
-        <option>D-III Kebendaharaan Negara</option>
+        <option>
+          D-III Kebendaharaan Negara
+        </option>
 
-        <option>D-III Manajemen Aset</option>
+        <option>
+          D-III Manajemen Aset
+        </option>
 
-        <option>D-III PBB/Penilai</option>
+        <option>
+          D-III PBB/Penilai
+        </option>
 
       </select>
 
@@ -242,18 +196,26 @@
 
     <div>
 
-      <label>Jenis Kelamin</label>
+      <label>
+        Jenis Kelamin
+      </label>
 
       <select
         name="gender"
         required
       >
 
-        <option value="">Pilih</option>
+        <option value="">
+          Pilih
+        </option>
 
-        <option value="Perempuan">Perempuan</option>
+        <option value="Perempuan">
+          Perempuan
+        </option>
 
-        <option value="Laki-laki">Laki-laki</option>
+        <option value="Laki-laki">
+          Laki-laki
+        </option>
 
       </select>
 
@@ -264,24 +226,38 @@
 
     <div>
 
-      <label>Angkatan</label>
+      <label>
+        Angkatan
+      </label>
 
       <select
         name="cohort"
         required
       >
 
-        <option value="">Pilih angkatan</option>
+        <option value="">
+          Pilih angkatan
+        </option>
 
-        <option value="2022">2022</option>
+        <option value="2022">
+          2022
+        </option>
 
-        <option value="2023">2023</option>
+        <option value="2023">
+          2023
+        </option>
 
-        <option value="2024">2024</option>
+        <option value="2024">
+          2024
+        </option>
 
-        <option value="2025">2025</option>
+        <option value="2025">
+          2025
+        </option>
 
-        <option value="2026">2026</option>
+        <option value="2026">
+          2026
+        </option>
 
       </select>
 
@@ -292,22 +268,34 @@
 
     <div>
 
-      <label>Tingkat/Semester saat ini</label>
+      <label>
+        Tingkat/Semester saat ini
+      </label>
 
       <select
         name="level"
         required
       >
 
-        <option value="">Pilih</option>
+        <option value="">
+          Pilih
+        </option>
 
-        <option>Tingkat 1</option>
+        <option>
+          Tingkat 1
+        </option>
 
-        <option>Tingkat 2</option>
+        <option>
+          Tingkat 2
+        </option>
 
-        <option>Tingkat 3</option>
+        <option>
+          Tingkat 3
+        </option>
 
-        <option>Tingkat 4</option>
+        <option>
+          Tingkat 4
+        </option>
 
       </select>
 
@@ -318,36 +306,45 @@
 
     <div>
 
-      <label>Status kemahasiswaan</label>
+      <label>
+        Status kemahasiswaan
+      </label>
 
       <select
         name="student_status"
         required
       >
 
-        <option value="">Pilih</option>
+        <option value="">
+          Pilih
+        </option>
 
-        <option>Aktif</option>
+        <option>
+          Aktif
+        </option>
 
-        <option>Nonaktif</option>
+        <option>
+          Nonaktif
+        </option>
 
-        <option>Cuti akademik</option>
+        <option>
+          Cuti akademik
+        </option>
 
       </select>
 
     </div>
 
-
   </div>
 
 
-  <!-- =====================================================
-       SCREENING
-       ===================================================== -->
+  <!-- SCREENING -->
 
   <div class="screening">
 
-    <h3>Pertanyaan penyaring</h3>
+    <h3>
+      Pertanyaan penyaring
+    </h3>
 
 
     <label>
@@ -432,14 +429,15 @@
 </section>
 
 
-
-<!-- =========================================================
-     PETUNJUK PENGISIAN
-     ========================================================= -->
+<!-- =========================
+     PETUNJUK
+     ========================= -->
 
 <section class="card">
 
-  <h2>Petunjuk pengisian</h2>
+  <h2>
+    Petunjuk pengisian
+  </h2>
 
   <p>
     Pilih satu jawaban yang paling sesuai dengan kondisi Anda.
@@ -482,10 +480,9 @@
 </section>
 
 
-
-<!-- =========================================================
+<!-- =========================
      SOSIALISASI KEUANGAN
-     ========================================================= -->
+     ========================= -->
 
 <section class="construct">
 
@@ -494,8 +491,6 @@
   <span class="badge">FS</span>
 </h3>
 
-
-<!-- FS1 -->
 
 <div class="question">
 
@@ -510,15 +505,30 @@
 
   <div class="likert">
 
-    <label><input type="radio" name="FS1" value="1" required><span>1</span></label>
+    <label>
+      <input type="radio" name="FS1" value="1" required>
+      <span>1</span>
+    </label>
 
-    <label><input type="radio" name="FS1" value="2"><span>2</span></label>
+    <label>
+      <input type="radio" name="FS1" value="2">
+      <span>2</span>
+    </label>
 
-    <label><input type="radio" name="FS1" value="3"><span>3</span></label>
+    <label>
+      <input type="radio" name="FS1" value="3">
+      <span>3</span>
+    </label>
 
-    <label><input type="radio" name="FS1" value="4"><span>4</span></label>
+    <label>
+      <input type="radio" name="FS1" value="4">
+      <span>4</span>
+    </label>
 
-    <label><input type="radio" name="FS1" value="5"><span>5</span></label>
+    <label>
+      <input type="radio" name="FS1" value="5">
+      <span>5</span>
+    </label>
 
   </div>
 
@@ -526,15 +536,12 @@
   <div class="likert-caption">
 
     <span>Sangat tidak setuju</span>
-
     <span>Sangat setuju</span>
 
   </div>
 
 </div>
 
-
-<!-- FS2 -->
 
 <div class="question">
 
@@ -549,15 +556,30 @@
 
   <div class="likert">
 
-    <label><input type="radio" name="FS2" value="1" required><span>1</span></label>
+    <label>
+      <input type="radio" name="FS2" value="1" required>
+      <span>1</span>
+    </label>
 
-    <label><input type="radio" name="FS2" value="2"><span>2</span></label>
+    <label>
+      <input type="radio" name="FS2" value="2">
+      <span>2</span>
+    </label>
 
-    <label><input type="radio" name="FS2" value="3"><span>3</span></label>
+    <label>
+      <input type="radio" name="FS2" value="3">
+      <span>3</span>
+    </label>
 
-    <label><input type="radio" name="FS2" value="4"><span>4</span></label>
+    <label>
+      <input type="radio" name="FS2" value="4">
+      <span>4</span>
+    </label>
 
-    <label><input type="radio" name="FS2" value="5"><span>5</span></label>
+    <label>
+      <input type="radio" name="FS2" value="5">
+      <span>5</span>
+    </label>
 
   </div>
 
@@ -565,15 +587,12 @@
   <div class="likert-caption">
 
     <span>Sangat tidak setuju</span>
-
     <span>Sangat setuju</span>
 
   </div>
 
 </div>
 
-
-<!-- FS3 -->
 
 <div class="question">
 
@@ -588,15 +607,30 @@
 
   <div class="likert">
 
-    <label><input type="radio" name="FS3" value="1" required><span>1</span></label>
+    <label>
+      <input type="radio" name="FS3" value="1" required>
+      <span>1</span>
+    </label>
 
-    <label><input type="radio" name="FS3" value="2"><span>2</span></label>
+    <label>
+      <input type="radio" name="FS3" value="2">
+      <span>2</span>
+    </label>
 
-    <label><input type="radio" name="FS3" value="3"><span>3</span></label>
+    <label>
+      <input type="radio" name="FS3" value="3">
+      <span>3</span>
+    </label>
 
-    <label><input type="radio" name="FS3" value="4"><span>4</span></label>
+    <label>
+      <input type="radio" name="FS3" value="4">
+      <span>4</span>
+    </label>
 
-    <label><input type="radio" name="FS3" value="5"><span>5</span></label>
+    <label>
+      <input type="radio" name="FS3" value="5">
+      <span>5</span>
+    </label>
 
   </div>
 
@@ -604,15 +638,12 @@
   <div class="likert-caption">
 
     <span>Sangat tidak setuju</span>
-
     <span>Sangat setuju</span>
 
   </div>
 
 </div>
 
-
-<!-- FS4 -->
 
 <div class="question">
 
@@ -627,15 +658,30 @@
 
   <div class="likert">
 
-    <label><input type="radio" name="FS4" value="1" required><span>1</span></label>
+    <label>
+      <input type="radio" name="FS4" value="1" required>
+      <span>1</span>
+    </label>
 
-    <label><input type="radio" name="FS4" value="2"><span>2</span></label>
+    <label>
+      <input type="radio" name="FS4" value="2">
+      <span>2</span>
+    </label>
 
-    <label><input type="radio" name="FS4" value="3"><span>3</span></label>
+    <label>
+      <input type="radio" name="FS4" value="3">
+      <span>3</span>
+    </label>
 
-    <label><input type="radio" name="FS4" value="4"><span>4</span></label>
+    <label>
+      <input type="radio" name="FS4" value="4">
+      <span>4</span>
+    </label>
 
-    <label><input type="radio" name="FS4" value="5"><span>5</span></label>
+    <label>
+      <input type="radio" name="FS4" value="5">
+      <span>5</span>
+    </label>
 
   </div>
 
@@ -643,7 +689,6 @@
   <div class="likert-caption">
 
     <span>Sangat tidak setuju</span>
-
     <span>Sangat setuju</span>
 
   </div>
@@ -653,10 +698,9 @@
 </section>
 
 
-
-<!-- =========================================================
+<!-- =========================
      SIKAP TERHADAP RISIKO
-     ========================================================= -->
+     ========================= -->
 
 <section class="construct">
 
@@ -665,8 +709,6 @@
   <span class="badge">ATR</span>
 </h3>
 
-
-<!-- ATR1 -->
 
 <div class="question">
 
@@ -682,30 +724,21 @@ Saya tetap berhati-hati, bahkan ketika membelanjakan uang saku bulanan yang saya
 <div class="likert">
 
 <label><input type="radio" name="ATR1" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="ATR1" value="2"><span>2</span></label>
-
 <label><input type="radio" name="ATR1" value="3"><span>3</span></label>
-
 <label><input type="radio" name="ATR1" value="4"><span>4</span></label>
-
 <label><input type="radio" name="ATR1" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- ATR2 -->
 
 <div class="question">
 
@@ -721,30 +754,21 @@ Saya lebih nyaman menyimpan uang saya di rekening bank daripada di pasar saham.
 <div class="likert">
 
 <label><input type="radio" name="ATR2" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="ATR2" value="2"><span>2</span></label>
-
 <label><input type="radio" name="ATR2" value="3"><span>3</span></label>
-
 <label><input type="radio" name="ATR2" value="4"><span>4</span></label>
-
 <label><input type="radio" name="ATR2" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- ATR3 -->
 
 <div class="question">
 
@@ -760,30 +784,21 @@ Ketika memikirkan kata “risiko”, istilah “rugi” langsung terlintas di be
 <div class="likert">
 
 <label><input type="radio" name="ATR3" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="ATR3" value="2"><span>2</span></label>
-
 <label><input type="radio" name="ATR3" value="3"><span>3</span></label>
-
 <label><input type="radio" name="ATR3" value="4"><span>4</span></label>
-
 <label><input type="radio" name="ATR3" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- ATR4 -->
 
 <div class="question">
 
@@ -799,24 +814,17 @@ Dalam hal berinvestasi, keamanan lebih penting daripada imbal hasil.
 <div class="likert">
 
 <label><input type="radio" name="ATR4" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="ATR4" value="2"><span>2</span></label>
-
 <label><input type="radio" name="ATR4" value="3"><span>3</span></label>
-
 <label><input type="radio" name="ATR4" value="4"><span>4</span></label>
-
 <label><input type="radio" name="ATR4" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
@@ -824,10 +832,9 @@ Dalam hal berinvestasi, keamanan lebih penting daripada imbal hasil.
 </section>
 
 
-
-<!-- =========================================================
+<!-- =========================
      AKSES LAYANAN KEUANGAN
-     ========================================================= -->
+     ========================= -->
 
 <section class="construct">
 
@@ -836,8 +843,6 @@ Dalam hal berinvestasi, keamanan lebih penting daripada imbal hasil.
   <span class="badge">AFS</span>
 </h3>
 
-
-<!-- AFS1 -->
 
 <div class="question">
 
@@ -853,30 +858,21 @@ Lembaga keuangan terdekat (misalnya bank, kantor pos, perusahaan asuransi, perus
 <div class="likert">
 
 <label><input type="radio" name="AFS1" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="AFS1" value="2"><span>2</span></label>
-
 <label><input type="radio" name="AFS1" value="3"><span>3</span></label>
-
 <label><input type="radio" name="AFS1" value="4"><span>4</span></label>
-
 <label><input type="radio" name="AFS1" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- AFS2 -->
 
 <div class="question">
 
@@ -892,30 +888,21 @@ Saya tinggal dalam radius kurang dari 1 km dari ATM yang mudah saya kunjungi.
 <div class="likert">
 
 <label><input type="radio" name="AFS2" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="AFS2" value="2"><span>2</span></label>
-
 <label><input type="radio" name="AFS2" value="3"><span>3</span></label>
-
 <label><input type="radio" name="AFS2" value="4"><span>4</span></label>
-
 <label><input type="radio" name="AFS2" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- AFS3 -->
 
 <div class="question">
 
@@ -931,30 +918,21 @@ Saya menerima informasi mengenai transaksi saya dengan segera.
 <div class="likert">
 
 <label><input type="radio" name="AFS3" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="AFS3" value="2"><span>2</span></label>
-
 <label><input type="radio" name="AFS3" value="3"><span>3</span></label>
-
 <label><input type="radio" name="AFS3" value="4"><span>4</span></label>
-
 <label><input type="radio" name="AFS3" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- AFS4 -->
 
 <div class="question">
 
@@ -970,30 +948,21 @@ Layanan keuangan yang disediakan oleh lembaga keuangan terjangkau bagi saya.
 <div class="likert">
 
 <label><input type="radio" name="AFS4" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="AFS4" value="2"><span>2</span></label>
-
 <label><input type="radio" name="AFS4" value="3"><span>3</span></label>
-
 <label><input type="radio" name="AFS4" value="4"><span>4</span></label>
-
 <label><input type="radio" name="AFS4" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- AFS5 -->
 
 <div class="question">
 
@@ -1009,30 +978,21 @@ Layanan keuangan yang saya terima dari lembaga keuangan sesuai dengan kebutuhan 
 <div class="likert">
 
 <label><input type="radio" name="AFS5" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="AFS5" value="2"><span>2</span></label>
-
 <label><input type="radio" name="AFS5" value="3"><span>3</span></label>
-
 <label><input type="radio" name="AFS5" value="4"><span>4</span></label>
-
 <label><input type="radio" name="AFS5" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- AFS6 -->
 
 <div class="question">
 
@@ -1048,24 +1008,17 @@ Ketentuan pada lembaga keuangan mudah saya pahami untuk mengajukan produk keuang
 <div class="likert">
 
 <label><input type="radio" name="AFS6" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="AFS6" value="2"><span>2</span></label>
-
 <label><input type="radio" name="AFS6" value="3"><span>3</span></label>
-
 <label><input type="radio" name="AFS6" value="4"><span>4</span></label>
-
 <label><input type="radio" name="AFS6" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
@@ -1073,10 +1026,9 @@ Ketentuan pada lembaga keuangan mudah saya pahami untuk mengajukan produk keuang
 </section>
 
 
-
-<!-- =========================================================
+<!-- =========================
      KENDALI PERILAKU
-     ========================================================= -->
+     ========================= -->
 
 <section class="construct">
 
@@ -1085,8 +1037,6 @@ Ketentuan pada lembaga keuangan mudah saya pahami untuk mengajukan produk keuang
   <span class="badge">BC</span>
 </h3>
 
-
-<!-- BC1 -->
 
 <div class="question">
 
@@ -1102,30 +1052,21 @@ Situasi keuangan saya sepenuhnya berada dalam kendali saya.
 <div class="likert">
 
 <label><input type="radio" name="BC1" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="BC1" value="2"><span>2</span></label>
-
 <label><input type="radio" name="BC1" value="3"><span>3</span></label>
-
 <label><input type="radio" name="BC1" value="4"><span>4</span></label>
-
 <label><input type="radio" name="BC1" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- BC3 -->
 
 <div class="question">
 
@@ -1141,30 +1082,21 @@ Saya dapat mengubah hal-hal penting dalam hidup saya dengan usaha saya sendiri.
 <div class="likert">
 
 <label><input type="radio" name="BC3" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="BC3" value="2"><span>2</span></label>
-
 <label><input type="radio" name="BC3" value="3"><span>3</span></label>
-
 <label><input type="radio" name="BC3" value="4"><span>4</span></label>
-
 <label><input type="radio" name="BC3" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- BC4 -->
 
 <div class="question">
 
@@ -1180,30 +1112,21 @@ Saya dapat menahan diri dari pembelian yang tidak perlu meskipun saya sedang ter
 <div class="likert">
 
 <label><input type="radio" name="BC4" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="BC4" value="2"><span>2</span></label>
-
 <label><input type="radio" name="BC4" value="3"><span>3</span></label>
-
 <label><input type="radio" name="BC4" value="4"><span>4</span></label>
-
 <label><input type="radio" name="BC4" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- BC5 -->
 
 <div class="question">
 
@@ -1219,24 +1142,17 @@ Saya dapat dengan mudah mengelola pengeluaran saya apabila saya menghendakinya.
 <div class="likert">
 
 <label><input type="radio" name="BC5" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="BC5" value="2"><span>2</span></label>
-
 <label><input type="radio" name="BC5" value="3"><span>3</span></label>
-
 <label><input type="radio" name="BC5" value="4"><span>4</span></label>
-
 <label><input type="radio" name="BC5" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
@@ -1244,10 +1160,9 @@ Saya dapat dengan mudah mengelola pengeluaran saya apabila saya menghendakinya.
 </section>
 
 
-
-<!-- =========================================================
+<!-- =========================
      LITERASI KEUANGAN
-     ========================================================= -->
+     ========================= -->
 
 <section class="construct">
 
@@ -1256,8 +1171,6 @@ Saya dapat dengan mudah mengelola pengeluaran saya apabila saya menghendakinya.
   <span class="badge">FL</span>
 </h3>
 
-
-<!-- FL1 -->
 
 <div class="question">
 
@@ -1273,30 +1186,21 @@ Inflasi yang tinggi berarti biaya hidup meningkat dengan cepat.
 <div class="likert">
 
 <label><input type="radio" name="FL1" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FL1" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FL1" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FL1" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FL1" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- FL2 -->
 
 <div class="question">
 
@@ -1312,30 +1216,21 @@ Lembaga keuangan menggunakan konsep diskonto (potongan bunga di muka) untuk meng
 <div class="likert">
 
 <label><input type="radio" name="FL2" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FL2" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FL2" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FL2" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FL2" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- FL3 -->
 
 <div class="question">
 
@@ -1351,30 +1246,21 @@ Investasi dengan imbal hasil tinggi cenderung memiliki risiko yang lebih tinggi 
 <div class="likert">
 
 <label><input type="radio" name="FL3" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FL3" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FL3" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FL3" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FL3" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- FL4 -->
 
 <div class="question">
 
@@ -1390,30 +1276,21 @@ Deposito berjangka bank menawarkan imbal hasil bunga yang besarannya sudah diten
 <div class="likert">
 
 <label><input type="radio" name="FL4" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FL4" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FL4" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FL4" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FL4" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- FL5 -->
 
 <div class="question">
 
@@ -1429,24 +1306,17 @@ Penting untuk berinvestasi pada berbagai jenis aset guna mengurangi risiko kerug
 <div class="likert">
 
 <label><input type="radio" name="FL5" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FL5" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FL5" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FL5" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FL5" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
@@ -1454,10 +1324,9 @@ Penting untuk berinvestasi pada berbagai jenis aset guna mengurangi risiko kerug
 </section>
 
 
-
-<!-- =========================================================
+<!-- =========================
      SIKAP KEUANGAN
-     ========================================================= -->
+     ========================= -->
 
 <section class="construct">
 
@@ -1466,8 +1335,6 @@ Penting untuk berinvestasi pada berbagai jenis aset guna mengurangi risiko kerug
   <span class="badge">FA</span>
 </h3>
 
-
-<!-- FA2 -->
 
 <div class="question">
 
@@ -1483,30 +1350,21 @@ Saya berpikir bahwa menyusun perencanaan keuangan sangatlah penting.
 <div class="likert">
 
 <label><input type="radio" name="FA2" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FA2" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FA2" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FA2" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FA2" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- FA3 -->
 
 <div class="question">
 
@@ -1522,30 +1380,21 @@ Saya berpikir bahwa mematuhi anggaran keuangan pribadi sangatlah penting.
 <div class="likert">
 
 <label><input type="radio" name="FA3" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FA3" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FA3" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FA3" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FA3" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- FA4 -->
 
 <div class="question">
 
@@ -1561,30 +1410,21 @@ Saya berpikir bahwa merencanakan pengeluaran uang penting untuk mengelola hidup 
 <div class="likert">
 
 <label><input type="radio" name="FA4" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FA4" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FA4" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FA4" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FA4" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- FA5 -->
 
 <div class="question">
 
@@ -1600,30 +1440,21 @@ Saya berpikir bahwa memikirkan kondisi keuangan saya di masa depan penting bagi 
 <div class="likert">
 
 <label><input type="radio" name="FA5" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FA5" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FA5" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FA5" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FA5" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- FA6 -->
 
 <div class="question">
 
@@ -1639,24 +1470,17 @@ Saya berpikir bahwa tujuan keuangan yang jelas dapat membantu saya menentukan pr
 <div class="likert">
 
 <label><input type="radio" name="FA6" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="FA6" value="2"><span>2</span></label>
-
 <label><input type="radio" name="FA6" value="3"><span>3</span></label>
-
 <label><input type="radio" name="FA6" value="4"><span>4</span></label>
-
 <label><input type="radio" name="FA6" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
@@ -1664,10 +1488,9 @@ Saya berpikir bahwa tujuan keuangan yang jelas dapat membantu saya menentukan pr
 </section>
 
 
-
-<!-- =========================================================
-     KONSUMSI KEUANGAN YANG BERTANGGUNG JAWAB
-     ========================================================= -->
+<!-- =========================
+     RFC
+     ========================= -->
 
 <section class="construct">
 
@@ -1676,8 +1499,6 @@ Saya berpikir bahwa tujuan keuangan yang jelas dapat membantu saya menentukan pr
   <span class="badge">RFC</span>
 </h3>
 
-
-<!-- RFC1 -->
 
 <div class="question">
 
@@ -1693,30 +1514,21 @@ Saya menjalani hidup sesuai dengan kemampuan keuangan saya.
 <div class="likert">
 
 <label><input type="radio" name="RFC1" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="RFC1" value="2"><span>2</span></label>
-
 <label><input type="radio" name="RFC1" value="3"><span>3</span></label>
-
 <label><input type="radio" name="RFC1" value="4"><span>4</span></label>
-
 <label><input type="radio" name="RFC1" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- RFC2 -->
 
 <div class="question">
 
@@ -1732,30 +1544,21 @@ Saya membayar tagihan bulanan saya sebelum jatuh tempo.
 <div class="likert">
 
 <label><input type="radio" name="RFC2" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="RFC2" value="2"><span>2</span></label>
-
 <label><input type="radio" name="RFC2" value="3"><span>3</span></label>
-
 <label><input type="radio" name="RFC2" value="4"><span>4</span></label>
-
 <label><input type="radio" name="RFC2" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- RFC3 -->
 
 <div class="question">
 
@@ -1771,30 +1574,21 @@ Saya berusaha merencanakan kondisi keuangan saya di masa depan.
 <div class="likert">
 
 <label><input type="radio" name="RFC3" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="RFC3" value="2"><span>2</span></label>
-
 <label><input type="radio" name="RFC3" value="3"><span>3</span></label>
-
 <label><input type="radio" name="RFC3" value="4"><span>4</span></label>
-
 <label><input type="radio" name="RFC3" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- RFC4 -->
 
 <div class="question">
 
@@ -1810,30 +1604,21 @@ Dalam pembelian barang konsumsi sehari-hari, saya memiliki informasi yang cukup 
 <div class="likert">
 
 <label><input type="radio" name="RFC4" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="RFC4" value="2"><span>2</span></label>
-
 <label><input type="radio" name="RFC4" value="3"><span>3</span></label>
-
 <label><input type="radio" name="RFC4" value="4"><span>4</span></label>
-
 <label><input type="radio" name="RFC4" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- RFC5 -->
 
 <div class="question">
 
@@ -1849,30 +1634,21 @@ Saya berusaha menambah wawasan mengenai pengelolaan keuangan pribadi yang berhas
 <div class="likert">
 
 <label><input type="radio" name="RFC5" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="RFC5" value="2"><span>2</span></label>
-
 <label><input type="radio" name="RFC5" value="3"><span>3</span></label>
-
 <label><input type="radio" name="RFC5" value="4"><span>4</span></label>
-
 <label><input type="radio" name="RFC5" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
 
-
-<!-- RFC6 -->
 
 <div class="question">
 
@@ -1888,24 +1664,17 @@ Ketika membeli suatu barang, hal pertama yang saya pikirkan adalah apakah saya m
 <div class="likert">
 
 <label><input type="radio" name="RFC6" value="1" required><span>1</span></label>
-
 <label><input type="radio" name="RFC6" value="2"><span>2</span></label>
-
 <label><input type="radio" name="RFC6" value="3"><span>3</span></label>
-
 <label><input type="radio" name="RFC6" value="4"><span>4</span></label>
-
 <label><input type="radio" name="RFC6" value="5"><span>5</span></label>
 
 </div>
 
 
 <div class="likert-caption">
-
 <span>Sangat tidak setuju</span>
-
 <span>Sangat setuju</span>
-
 </div>
 
 </div>
@@ -1913,24 +1682,23 @@ Ketika membeli suatu barang, hal pertama yang saya pikirkan adalah apakah saya m
 </section>
 
 
-
-<!-- =========================================================
+<!-- =========================
      SUBMIT
-     ========================================================= -->
+     ========================= -->
 
 <section class="card submit-card">
 
 <p class="muted">
 
-Pastikan seluruh pertanyaan telah dijawab sebelum mengirim.
+  Pastikan seluruh pertanyaan telah dijawab sebelum mengirim.
 
 </p>
 
 
 <p class="muted prize-disclaimer">
 
-Nomor WhatsApp hanya digunakan untuk keperluan pengundian/pemberian hadiah
-dan disimpan terpisah dari jawaban penelitian.
+  Nomor WhatsApp hanya digunakan untuk keperluan pengundian/pemberian hadiah
+  dan disimpan terpisah dari jawaban penelitian.
 
 </p>
 
@@ -1940,7 +1708,7 @@ dan disimpan terpisah dari jawaban penelitian.
   class="btn"
 >
 
-Kirim Jawaban
+  Kirim Jawaban
 
 </button>
 
@@ -1952,10 +1720,9 @@ Kirim Jawaban
 </main>
 
 
-
-<!-- =========================================================
+<!-- =========================
      FOOTER
-     ========================================================= -->
+     ========================= -->
 
 <footer>
 
@@ -1965,18 +1732,16 @@ Nilai validitas/reliabilitas pada sumber acuan bukan hasil pengujian sampel Indo
 </footer>
 
 
-
-<!-- =========================================================
+<!-- =========================
      CONFIG
-     ========================================================= -->
+     ========================= -->
 
 <script src="config.js"></script>
 
 
-
-<!-- =========================================================
-     SUBMIT SCRIPT
-     ========================================================= -->
+<!-- =========================
+     SUBMISSION SCRIPT
+     ========================= -->
 
 <script>
 
@@ -2002,28 +1767,32 @@ alertBox.style.display =
   'none';
 
 
-
 function show(
   msg,
-  type='error'
+  type = 'error'
 ){
 
   alertBox.className =
     'alert ' + type;
 
+
   alertBox.textContent =
     msg;
+
 
   alertBox.style.display =
     'block';
 
+
   window.scrollTo({
-    top:0,
-    behavior:'smooth'
+
+    top: 0,
+
+    behavior: 'smooth'
+
   });
 
 }
-
 
 
 form.addEventListener(
@@ -2032,10 +1801,6 @@ form.addEventListener(
 
     e.preventDefault();
 
-
-    /* =========================================
-       VALIDASI FORM
-       ========================================= */
 
     if(!form.checkValidity()){
 
@@ -2046,10 +1811,6 @@ form.addEventListener(
     }
 
 
-    /* =========================================
-       AMBIL DATA FORM
-       ========================================= */
-
     const data = {};
 
 
@@ -2058,9 +1819,9 @@ form.addEventListener(
     );
 
 
-    /* =========================================
+    /* =========================
        VALIDASI USIA
-       ========================================= */
+       ========================= */
 
     if(Number(data.age) < 18){
 
@@ -2073,9 +1834,9 @@ form.addEventListener(
     }
 
 
-    /* =========================================
+    /* =========================
        VALIDASI WHATSAPP
-       ========================================= */
+       ========================= */
 
     if(
       !/^[0-9+()\s-]{9,20}$/.test(
@@ -2092,9 +1853,9 @@ form.addEventListener(
     }
 
 
-    /* =========================================
-       VALIDASI STATUS MAHASISWA
-       ========================================= */
+    /* =========================
+       VALIDASI STATUS
+       ========================= */
 
     if(
       data.student_status !== 'Aktif'
@@ -2109,9 +1870,9 @@ form.addEventListener(
     }
 
 
-    /* =========================================
+    /* =========================
        VALIDASI SCREENING
-       ========================================= */
+       ========================= */
 
     if(
       data.self_manage !== 'Ya' ||
@@ -2127,9 +1888,9 @@ form.addEventListener(
     }
 
 
-    /* =========================================
-       TOMBOL SUBMIT
-       ========================================= */
+    /* =========================
+       BUTTON
+       ========================= */
 
     const btn =
       form.querySelector(
@@ -2145,41 +1906,39 @@ form.addEventListener(
       'Mengirim...';
 
 
-
-    /* =========================================
-       SIAPKAN DATA UNTUK GOOGLE SHEETS
-       ========================================= */
+    /* =========================
+       DATA UNTUK GOOGLE SHEETS
+       ========================= */
 
     const params =
       new URLSearchParams({
 
-        action:'submit',
+        action: 'submit',
 
-        key:APP_CONFIG.submitKey,
+        key: APP_CONFIG.submitKey,
 
         ...data
 
       });
 
 
-
-    /* =========================================
-       KIRIM KE GOOGLE APPS SCRIPT
-       ========================================= */
-
     try{
 
       await fetch(
+
         APP_CONFIG.scriptUrl,
+
         {
 
-          method:'POST',
+          method: 'POST',
 
-          mode:'no-cors',
+          mode: 'no-cors',
 
-          headers:{
+          headers: {
+
             'Content-Type':
               'application/x-www-form-urlencoded;charset=UTF-8'
+
           },
 
           body:
@@ -2189,19 +1948,23 @@ form.addEventListener(
             'no-store'
 
         }
+
       );
 
 
-      /* =========================================
+      /* =========================
          BERHASIL
-         ========================================= */
+         ========================= */
 
       form.reset();
 
 
       show(
+
         'Terima kasih. Jawaban Anda berhasil dikirim.',
+
         'success'
+
       );
 
 
@@ -2219,16 +1982,19 @@ form.addEventListener(
       btn.disabled =
         false;
 
+
       btn.textContent =
         'Kirim Jawaban';
 
     }
 
   }
+
 );
 
 </script>
 
 
 </body>
+
 </html>
