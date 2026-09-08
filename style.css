@@ -57,14 +57,7 @@ body{
   text-align:center;
   padding-left:175px;
   padding-right:175px;
-  transform:translateY(0);
-}
-
-/* Naikkan tulisan sedikit di laptop */
-@media(min-width:701px){
-  .hero-inner{
-    transform:translateY(-30px);
-  }
+  transform:translateY(35px);
 }
 
 .eyebrow{
