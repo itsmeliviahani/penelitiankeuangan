@@ -716,7 +716,7 @@ details summary{
     left:-32px;
     top:auto;
     bottom:-35px;
-    width:130px;
+    width:110px;
     z-index:1;
     animation-delay:-1.5s
   }
@@ -725,7 +725,7 @@ details summary{
     right:-32px;
     top:auto;
     bottom:-35px;
-    width:125px;
+    width:110px;
     z-index:1;
     animation-delay:-2.4s
   }
