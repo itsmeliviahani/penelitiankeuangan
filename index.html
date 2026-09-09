@@ -1956,39 +1956,23 @@ form.addEventListener(
       show(
 
         'Terima kasih. Jawaban Anda berhasil dikirim.',
-
         'success'
-
       );
-
-
     }catch(err){
-
       show(
-
         'Jawaban belum tersimpan. Pastikan koneksi internet aktif dan konfigurasi Google Sheets sudah benar. '
         + err.message
-
-      );
-
-    }finally{
-
+      );    
+    }
+    finally{     
       btn.disabled =
         false;
-
-
       btn.textContent =
         'Kirim Jawaban';
-
     }
-
   }
-
 );
 
 </script>
-
-
 </body>
-
 </html>
